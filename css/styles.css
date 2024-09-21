@@ -1,27 +1,55 @@
+/* Base Styles */
 body {
-    margin: 0; /*!!!*/
-    font-family: Arial, Helvetica, sans-serif; /*!!!*/
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body * {
-    box-sizing: border-box; /*!!!*/
+    box-sizing: border-box;
 }
 
 .container {
-    max-width: 1250px; /*!!!*/
-    margin: 0 auto; /*!!!*/
+    max-width: 1250px;
+    margin: 0 auto;
 }
 
 .button {
-    /* Rectangle 2 */
     background: #E3B873;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     border-radius: 2px;
-    outline: 0; /*!!!*/
-    border: 0; /*!!!*/
-    padding: 13px 33px; /*!!!*/
-    color: whitesmoke; /*!!!*/
-    text-transform: uppercase; /*!!!*/
+    outline: 0;
+    border: 0;
+    padding: 13px 33px;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.button1 {
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    padding: 13px 33px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    height: 51px;
+    margin-top: 41px;
+    width: 207px;
+}
+
+.button2 {
+    /* Rectangle 2.8 */
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    margin-left: 20px;
+    background: none;
+    color: whitesmoke;
+    height: 51px;
+    width: 207px;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    outline: 0;
 }
 
 .logo {
@@ -29,60 +57,204 @@ body * {
 }
 
 .header {
-    background-color: black; /*!!!*/
+    background-color: black;
 }
 
 .header-content {
-    display: flex; /*!!!*/
-    justify-content: space-between; /*!!!*/
-    height: 83px; /*!!!*/
-    align-items: center; /*!!!*/
+    display: flex;
+    justify-content: space-between;
+    height: 83px;
+    align-items: center;
 }
 
 .header-navigation {
-    list-style: none; /*!!!*/
-    display: flex; /*!!!*/
+    list-style: none;
+    display: flex;
+    padding-top: 0;
 }
 
 .header-navigation_item {
-    margin-right: 47px; /*!!!*/
+    margin-right: 30px;
+}
+
+.header-navigation_item_phone {
+    margin-right: 47px;
+    width: 140px;
 }
 
 .header-navigation_item a {
-    text-decoration: none; /*!!!*/
-    color: whitesmoke; /*!!!*/
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 .hero {
-    background-image: url(../images/image\(4\).png); /*!!!*/
-    background-size: cover; /*!!!*/
-    height: 707px; /*!!!*/
+    background-image: url(../images/image\(4\).png);
+    background-size: cover;
+    height: 707px;
     padding-top: 194px;
-    position: relative; /*!!!*/
+    position: relative;
 }
 
 .hero-overlay {
-    content: ''; /*!!!*/
-    position: absolute; /*!!!*/
-    top: 0; /*!!!*/
-    left: 0; /*!!!*/
-    right: 0; /*!!!*/
-    bottom: 0; /*!!!*/
-    background-color: rgba(0, 0, 0, .7); /*!!!*/
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
 }
 
 .hero-container {
-    position: relative; /*!!!*/
-    z-index: 1; /*!!!*/
+    position: relative;
+    z-index: 1;
 }
 
 .title {
-    margin: 0; /*!!!*/
-    /* Turnkey Repair in the city of Rostov-on-Don */
-    font-family: 'Yeseva One', 'Times New Roman', Times, serif; /*!!!*/
+    margin: 0;
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
     font-style: normal;
     font-size: 40px;
     line-height: 53px;
     text-transform: uppercase;
     color: #FFFFFF;
+    max-width: 600px;
+}
+
+.p {
+    /* Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work */
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+    max-width: 430px;
+    height: 89px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.projects h2 {
+    text-align: center;
+    color: #333;
+}
+
+.projects-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-item {
+    text-align: center;
+}
+
+.project-item img {
+    max-width: 100%;
+}
+
+/* Team Section */
+.team {
+    padding: 50px 0;
+}
+
+.team h2 {
+    text-align: center;
+    color: #333;
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    max-width: 100%;
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 50px 0;
+    background-color: #e3b873;
+}
+
+.reviews h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.review-item {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    color: white;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    background-color: #333;
+}
+
+.contact h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact input, .contact button {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.contact button {
+    background-color: #e3b873;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Mobile styles for screens under 1300px */
+@media screen and (max-width: 1300px) {
+    .header-navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-list, .team-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Further mobile optimization for screens under 768px */
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 400px;
+        padding-top: 100px;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .projects-list, .team-list {
+        flex-direction: column;
+        padding: 0 20px;
+    }
 }
